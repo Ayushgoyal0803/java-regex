@@ -7,8 +7,8 @@ public class ExtractDates {
     public static void main(String[] args) {
         String s1 = "The events are scheduled for 12/05/2023, 15/08/2024, and 29/02/2020.";
         String regex = "[0-9]{2}/[0-9]{2}/[0-9]{4}";
-
-        Pattern pattern = Pattern.compile(regex);
+        String regex1 = "(0[0-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)[0-9]{2}";
+        Pattern pattern = Pattern.compile(regex1);
 
         Matcher matcher = pattern.matcher(s1);
 
