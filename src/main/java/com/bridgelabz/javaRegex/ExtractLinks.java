@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class ExtractLinks {
     public static void main(String[] args) {
         String s1 = "Visit https://www.google.com and http://example.org for more info.";
-        String regex = "https?://(?:www\\.)?[A-Za-z0-9-_]+\\.[a-z]{2,}";
+        String regex = "(https?://)?(?:www\\.)?[A-Za-z0-9-_]+\\.[a-z]{2,}";
 
         Pattern pattern = Pattern.compile(regex);
 
